@@ -145,4 +145,4 @@ export default async function decorate(block) {
   // navWrapper.className = 'nav-wrapper';
   // navWrapper.append(nav);
   // block.append(navWrapper);
-}
+// }
