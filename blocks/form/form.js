@@ -37,7 +37,7 @@ function constructPayload(form) {
 async function submitForm(form) {
   const payload = constructPayload(form);
   payload.timestamp = new Date().toJSON();
-  const resp = await fetch(`https://form.aem.page/main--helix-website--adobe${form.dataset.action}`, {
+  const resp = await fetch(`https://form.aem.page/main--franklinstein--smmurf${form.dataset.action}`, {
     method: 'POST',
     cache: 'no-cache',
     headers: {
@@ -138,7 +138,7 @@ export async function createForm(formURL) {
   const form = document.createElement('form');
   const rules = [];
   // eslint-disable-next-line prefer-destructuring
-  form.dataset.action = pathname;
+  form.dataset.action = pathname.split('.json')[0];
   json.data.forEach((fd) => {
     fd.Type = fd.Type || 'text';
     const fieldWrapper = document.createElement('div');
