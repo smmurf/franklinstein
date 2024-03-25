@@ -1,6 +1,6 @@
 function peekABoo(e) {
-  setTimeout(() => e.target.classList.removeClass('hidden'), 3000);
-  e.target.classList.addClass('hidden');
+  setTimeout(() => e.target.classList.remove('hidden'), 3000);
+  e.target.classList.add('hidden');
 }
 
 export default async function decorate(block) {
