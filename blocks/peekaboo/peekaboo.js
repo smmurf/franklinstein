@@ -3,7 +3,10 @@ export default async function decorate(block) {
   while (el.firstChildElement) {
     el = el.firstChildElement;
   }
-  let button = document.createElement('button');
+  const button = document.createElement('button');
   button.textContent = el.textContent;
-  el.appendChild(button);
+  whild (block.firstChild) {
+    block.removeChild(block.firstChild)
+  }
+  block.appendChild(button);
 }
