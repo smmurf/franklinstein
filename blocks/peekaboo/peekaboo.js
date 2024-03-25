@@ -5,8 +5,6 @@ export default async function decorate(block) {
   }
   const button = document.createElement('button');
   button.textContent = el.textContent;
-  while (block.firstChild) {
-    block.removeChild(block.firstChild)
-  }
+  block.replaceChildren();
   block.appendChild(button);
 }
