@@ -10,7 +10,7 @@ export default async function decorate(block) {
   }
   const button = document.createElement('button');
   button.textContent = el.textContent;
-  button.addEventListener('click', peekABoo);
+  button.addEventListener('click', peekABoo, {passive: true});
   block.replaceChildren();
   block.appendChild(button);
 }
