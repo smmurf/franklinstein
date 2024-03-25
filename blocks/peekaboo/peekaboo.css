@@ -1,5 +1,5 @@
 .peekaboo button {
-    translate: transform .5s;
+    animation: transform .5s;
 }
 
 .peekaboo .hidden {
