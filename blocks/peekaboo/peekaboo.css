@@ -1,3 +1,7 @@
+.peekaboo button {
+    translate: transform .5s;
+}
+
 .peekaboo .hidden {
-    visibility: hidden;
+    transform: scale(0);
 }
