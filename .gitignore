@@ -2,7 +2,7 @@
 coverage/*
 logs/*
 node_modules/*
-!node_modulex/@udex
+!node_modules/@udex
 
 helix-importer-ui
 .DS_Store
