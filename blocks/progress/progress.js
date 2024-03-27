@@ -4575,7 +4575,7 @@ function decorate(block) {
   const progress = el.textContent;
   block.replaceChildren();
   const pBar = document.createElement("udex-progress-bar");
-  pBar.setAttribute("value", 19);
+  pBar.setAttribute("value", progress);
   pBar.setAttribute("value-state", "Information");
   block.appendChild(pBar);
 }
