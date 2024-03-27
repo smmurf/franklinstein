@@ -8,6 +8,6 @@ export default function decorate(block) {
     const progress = el.textContent;
     block.replaceChildren();
     const pBar = document.createElement('udex-progress-bar');
-    pBar.setAttribute('value', progress);
+    pBar.setAttribute('value', 25);
     block.appendChild(pBar);
 }
