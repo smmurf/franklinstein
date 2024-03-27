@@ -2,6 +2,6 @@
     transition: transform .2s;
 }
 
-.peekaboo .hidden {
+.peekaboo .pkb-hidden {
     transform: scale(0);
 }

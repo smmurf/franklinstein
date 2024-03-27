@@ -1,5 +1,5 @@
 function peekABoo(e) {
-  setTimeout(() => e.target.classList.remove('hidden'), 3000);
+  setTimeout(() => e.target.classList.remove('pkb-hidden'), 3000);
   e.target.classList.add('hidden');
 }
 
