@@ -1,4 +1,5 @@
 import "@udex/web-components/dist/ProgressBar.js";
+import "@ui5/webcomponents-icons/dist/AllIcons.js";
 
 export default function decorate(block) {
     let el = block;
